@@ -1,2 +1,4 @@
 # TripletLoc
-The official implementation of TripletLoc. The code and dataset will be open-sourced upon acceptance of the paper.
+TripletLoc: One-Shot Global Localization using Semantic Triplet in Large-scale Urban Environment
+
+The code and dataset will be open-sourced upon acceptance of the paper.
