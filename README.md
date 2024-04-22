@@ -3,8 +3,13 @@
 <p align="center">The code will be open-sourced upon acceptance of the paper.</p>
 
 # TripletLoc
-TripletLoc is a fast, effecient, and robust registration-based 6-DoF global localization method in urban environment.
+TripletLoc is a fast, efficient, and robust registration-based 6-DoF global localization method in urban environment.
 
+A demo video can be found at: https://www.youtube.com/watch?v=plMNDI84uEg  
+
+<center>
+<p align="center"><a href="https://www.youtube.com/watch?v=plMNDI84uEg"><img src="docs/video_cover.png" width=600 /></p>
+</center>
 
 # Supplementary Material
 Here are the supplementary material [docs/appendix.pdf](docs/appendix.pdf), which investigates the influences of $k$, $\tau_{edge}$ and $\tau$ on the global localization performance of TripletLoc. 
