@@ -5,10 +5,10 @@
 # TripletLoc
 TripletLoc is a fast, efficient, and robust registration-based 6-DoF global localization method in urban environment.
 
-A demo video can be found at: https://www.youtube.com/watch?v=plMNDI84uEg  
+A demo video can be found at: https://www.youtube.com/watch?v=3wNT82w2Z4w  
 
 <center>
-<p align="center"><a href="https://www.youtube.com/watch?v=plMNDI84uEg"><img src="docs/video_cover.png" width=600 /></p>
+<p align="center"><a href="https://https://www.youtube.com/watch?v=3wNT82w2Z4w"><img src="docs/video_cover.png" width=600 /></p>
 </center>
 
 # Supplementary Material
