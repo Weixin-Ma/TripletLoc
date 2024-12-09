@@ -1,6 +1,7 @@
 #  <p align="center"> TripletLoc: One-Shot Global Localization using Semantic Triplet in Urban Environment </p>
 
-<p align="center">The code will be open-sourced upon acceptance of the paper.</p>
+<p align="center">Our paper has been accepted by IEEE RA-L.</p>
+<p align="center">The code will be open-sourced soon.</p>
 
 # TripletLoc
 TripletLoc is a fast, efficient, and robust registration-based 6-DoF global localization method in urban environment.
