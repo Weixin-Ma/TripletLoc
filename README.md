@@ -66,7 +66,7 @@ source devel/setup.bash
 ## Data preparation
 * **LiDAR scans**
 
-Please download LiDAR scans (Ouster is used) from the offical website of [HeLiPR](https://sites.google.com/view/heliprdataset/home) dataset. (We preprocess the LiDAR scans by remove points satisifying `dis>150, dis=\sqrt{p.x^2+p.y^2}`, since we found that [SPVNAS](https://github.com/mit-han-lab/spvnas) sometimes will result in errors when using the original LiDAR scans (Ouster) from HeLiPR. After filtering, everything goes well. See `preprocess_filter_pc_heliper.launch` for your reference.)
+Please download LiDAR scans (Ouster is used) from the offical website of [HeLiPR](https://sites.google.com/view/heliprdataset/home) dataset. (We preprocess the LiDAR scans by removing points satisifying `dis>150, dis=\sqrt{p.x^2+p.y^2}`, since we found that [SPVNAS](https://github.com/mit-han-lab/spvnas) sometimes will result in errors when using the original LiDAR scans (Ouster) from HeLiPR. After filtering, everything goes well. See `preprocess_filter_pc_heliper.launch` for your reference.)
 
 * **Semantic label**
   
