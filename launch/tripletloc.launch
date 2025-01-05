@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="tripletloc" pkg="tripletloc" type="tripletloc_node" output="screen">
+    <param name="config_file" type="string" value="$(find tripletloc)/config/config_tripletloc.yaml"/>
+    <param name="prior_maps_dir" type="string" value="$(find tripletloc)/test_data/maps/KAIST04/"/>
+    <param name="query_seq_dir" type="string" value="$(find tripletloc)/test_data/KAIST05/"/>
+    <param name="save_dir" type="string" value="$(find tripletloc)/results/TripletLoc/"/>
+    <param name="by_step" type="bool" value="false"/>
+  </node>
+  <node pkg="rviz" type="rviz" name="tripletloc_rviz" output="log" args="-d $(find tripletloc)/config/config_tripletloc.rviz" required="true" />
+</launch>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="baseline_TG" pkg="tripletloc" type="baseline_TG" output="screen">
+    <param name="config_file" type="string" value="$(find tripletloc)/config/configs_for_baselines/config_tripletgraph.yaml"/>
+    <param name="ref_seq_dir" type="string" value="$(find tripletloc)/test_data/KAIST04/"/>
+    <param name="que_seq_dir" type="string" value="$(find tripletloc)/test_data/KAIST05/"/>
+    <param name="save_dir" type="string" value="$(find tripletloc)/results/Triplet-Graph/"/>
+  </node>
+  <node pkg="rviz" type="rviz" name="baseline_TG_rviz" output="log" args="-d $(find tripletloc)/config/configs_for_baselines/config_tripletgraph.rviz" required="true" />
+</launch>

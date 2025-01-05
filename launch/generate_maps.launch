@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="tripletloc" pkg="tripletloc" type="generate_maps" output="screen">
+    <param name="config_file" type="string" value="$(find tripletloc)/config/config_generate_maps.yaml"/>
+    <param name="seq_for_maps_dir" type="string" value="$(find tripletloc)/test_data/KAIST04/"/>
+    <!-- 0: generate RSN map; 1: generate instance map -->
+    <param name="rsn_or_instance" type="int" value="1"/> 
+    <param name="save_path_instance_map" type="string" value="$(find tripletloc)/test_data/maps/"/>
+    <param name="save_path_RSN_map" type="string" value="$(find tripletloc)/test_data/maps/"/>
+  </node>
+  <node pkg="rviz" type="rviz" name="tripletloc_rviz" output="log" args="-d $(find tripletloc)/config/config_generate_maps.rviz" required="true" />
+</launch>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <node name="filter_pc_heliper" pkg="tripletloc" type="filter_pc_heliper" output="screen">
+  <!-- pls download Ouster LiDAR scans in advance -->
+  <param name="seq_tobe_processed" type="string" value="/xxxx/HeliPR/KAIST04/LiDAR/Ouster"/>
+  <!-- pls create your own folder for saving in davance -->
+  <param name="save_path" type="string" value="/xxxx/HeliPR/KAIST04/LiDAR/Ouster_filterd/"/>
+  </node>
+  <node pkg="rviz" type="rviz" name="tripletloc_rviz" output="log" args="-d $(find tripletloc)/config/preprocoss_filter_pc_heliper.rviz" required="true" />
+</launch>

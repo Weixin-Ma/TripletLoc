@@ -1,0 +1,118 @@
+# This file is covered by the LICENSE file in the root of this project.
+query_related:
+  des_type: 2  # 0: relative angle based (Des_{v_j}^{\alpha})， 1： edge length based (Des_{v_j}^{d})， 2： combination (Des_{v_j})
+  frames_interval: 10  
+  voxel_leaf_size: 0.1   #0.05, unit: meter
+  ins_fuse_radius: 0.5   #unit: meter
+  knn_match_number: 25 
+  vertex_dis_thre_for_correct_match: 2.5   #beyond paper, evaluate whether a vertex match is "correct" "acceptable" 
+  RRE_thr: 10          #RRE(degree) threshold for successful case
+  RTE_thr: 7.5         #RTE(m)      threshold for successful case
+angel_resolution: 5    #i.e., \theta (degree) in Triplet-Graph, should be divisible by 180
+edge_dis_thr: 20       #i.e., \tau_{dege}(m) in paper, the larger, the slower  
+dis_resolution: 0.5    #i.e., \tau (m) in paper, the smaller, the slower
+solver_related:
+  solver_type: 0       # 0: Gtsam, 1: Teaser
+  use_rsn: True        # for Gtsam solver only; True: rotation constraint from RSN map; False: not use
+  noise_bound: 0.5     #(m) para for Teaser (in fun pose_estimate() Teaser is used as the solver; in fun pose_estimate_new() Gtsam is used as solver, we only use MCQ search from Teaser)
+  rot_delta: 5         #(degree) i.e., \delta: additional perturbation for rotation measurement noise in Eq.3
+labels: 
+  0 : "car"
+  1 : "bicycle"
+  2 : "motorcycle"
+  3 : "truck"
+  4 : "other-vehicle"
+  5 : "person"
+  6 : "bicyclist"
+  7 : "motorcyclist"
+  8 : "road"
+  9 : "parking"
+  10: "sidewalk"
+  11: "other-ground"
+  12: "building"
+  13: "fence"
+  14: "vegetation"
+  15: "trunk"
+  16: "terrain"
+  17: "pole"
+  18: "traffic-sign"
+classes_for_graph:        # False: not-used, True:used, !!!!!! before modification, make sure that you have created the corresponding instance map file
+  0 : False        #"car"
+  1 : False        #"bicycle"
+  2 : False        #"motorcycle"
+  3 : False        #"truck"
+  4 : False        #"other-vehicle"
+  5 : False        #"person"
+  6 : False        #"bicyclist"
+  7 : False        #"motorcyclist"
+  8 : False        #"road"
+  9 : False        #"parking"
+  10: False        #"sidewalk"
+  11: False        #"other-ground"
+  12: False        #"building"
+  13: False #True  #"fence"
+  14: False #True  #"vegetation"
+  15: True         #"trunk"
+  16: False        #"terrain"
+  17: True         #"pole"
+  18: True         #"traffic-sign"
+instance_seg_para:      #paras for setClusterTolerance, try to fine-tune for other classes if you want to use them
+  0 : 0.5        #"car"
+  1 : 0.1        #"bicycle"
+  2 : 0.1        #"motorcycle"
+  3 : 0.1        #"truck"
+  4 : 0.1        #"other-vehicle"
+  5 : 0.5        #"person"
+  6 : 0.1        #"bicyclist"
+  7 : 0.1        #"motorcyclist"
+  8 : 0.1        #"road"
+  9 : 0.5        #"parking"
+  10: 0.5        #"sidewalk"
+  11: 0.1        #"other-ground"
+  12: 1.0        #"building"
+  13: 0.5        #"fence"
+  14: 0.5        #"vegetation"
+  15: 0.5        #"trunk"
+  16: 0.5        #"terrain"
+  17: 0.5        #"pole"
+  18: 0.5        #"traffic-sign"
+mini_point_one_instance:      #paras for EuclideanCluster, try to fine-tune for other classes if you want to use them
+  0 : 80         #"car"
+  1 : 10         #"bicycle"
+  2 : 10         #"motorcycle"
+  3 : 10         #"truck"
+  4 : 10         #"other-vehicle"
+  5 : 10         #"person"
+  6 : 10         #"bicyclist"
+  7 : 10         #"motorcyclist"
+  8 : 10         #"road"
+  9 : 80         #"parking"
+  10: 200        #"sidewalk"
+  11: 10         #"other-ground"
+  12: 200        #"building"
+  13: 40         #"fence"
+  14: 200        #"vegetation"
+  15: 20         #"trunk"
+  16: 10         #"terrain"
+  17: 20         #"pole"
+  18: 20         #"traffic-sign"
+color_map: # bgr
+  0 : [245, 150, 100]  #"car"
+  1 : [245, 230, 100]  #"bicycle"
+  2 : [150, 60, 30]    #"motorcycle"
+  3 : [180, 30, 80]    #"truck"
+  4 : [255, 0, 0]      #"other-vehicle"
+  5 : [30, 30, 255]    #"person"
+  6 : [200, 40, 255]   #"bicyclist"
+  7 : [90, 30, 150]    #"motorcyclist"
+  8 : [255, 0, 255]    #"road"
+  9 : [255, 150, 255]  #"parking"
+  10: [75, 0, 75]      #"sidewalk"
+  11: [75, 0, 175]     #"other-ground"
+  12: [0, 200, 255]    #"building"
+  13: [50, 120, 255]   #"fence"
+  14: [0, 175, 0]      #"vegetation"
+  15: [0, 60, 135]     #"trunk"
+  16: [80, 240, 150]   #"terrain"
+  17: [150, 240, 255]  #"pole"
+  18: [0, 0, 255]      #"traffic-sign"
