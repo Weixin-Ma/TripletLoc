@@ -46,11 +46,8 @@ Tested on Ubuntu 20.04.3 LTS
 * yaml-cpp `sudo apt install libyaml-cpp-dev`
 * [Ceres](http://ceres-solver.org/installation.html) (for baseline `Triplet-Graph`, >= v2.2.0)
 
-*Note that if you do not want to run baseline Triple-graph, then you do not need ceres (remember to comment out related commands in the CMakeLists.txt file).
-```
-# add_executable(baseline_TG src/baseline_TripletGraph.cpp src/tripletgraph.cpp)   #baseline for triplet graph
-# target_link_libraries(baseline_TG  ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${YAMLCPP_LIBRARIES} ${CERES_LIBRARIES})
-```
+*Note that if you do not want to run baseline Triple-graph, then you do not need ceres.
+
 ## Build
 ```text
 mkdir -p ~/tripletloc_ws/src

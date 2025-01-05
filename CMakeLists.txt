@@ -61,12 +61,12 @@ include_directories(
 # add_executable(filter_pc_heliper src/preprocoss_filter_pc_heliper.cpp ) #for filtering point cloud to fit spvnas
 # target_link_libraries(filter_pc_heliper ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
-add_executable(generate_maps src/TripletLoc_generate_maps.cpp)   #generate instance map and RSN map
-target_link_libraries(generate_maps ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${YAMLCPP_LIBRARIES})
+# add_executable(generate_maps src/TripletLoc_generate_maps.cpp)   #generate instance map and RSN map
+# target_link_libraries(generate_maps ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${YAMLCPP_LIBRARIES})
 
-############# baseline Triplet-Graph ("Triplet-Graph: Global Metric Localization Based on Semantic Triplet Graph for Autonomous Vehicles", IEEE RA-L, 2024.)
-add_executable(baseline_TG src/baseline_TripletGraph.cpp src/tripletgraph.cpp)
-target_link_libraries(baseline_TG  ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${YAMLCPP_LIBRARIES} ${CERES_LIBRARIES})
+# ############# baseline Triplet-Graph ("Triplet-Graph: Global Metric Localization Based on Semantic Triplet Graph for Autonomous Vehicles", IEEE RA-L, 2024.)
+# add_executable(baseline_TG src/baseline_TripletGraph.cpp src/tripletgraph.cpp)
+# target_link_libraries(baseline_TG  ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${YAMLCPP_LIBRARIES} ${CERES_LIBRARIES})
 
 # ############# our method 
 set(TL_src
