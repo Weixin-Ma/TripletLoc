@@ -55,7 +55,7 @@ Tested on Ubuntu 20.04.3 LTS
 ```text
 mkdir -p ~/tripletloc_ws/src
 cd ~/tripletloc_ws/src
-git clone https://github.com/Weixin-Ma/tripletLoc.git
+git clone https://github.com/Weixin-Ma/tripletloc.git
 cd  tripletloc
 mkdir build && cd build
 cmake ..
