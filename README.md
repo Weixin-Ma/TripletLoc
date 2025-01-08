@@ -22,14 +22,14 @@ A demo video can be found at [Youtube]( https://www.youtube.com/watch?v=3wNT82w2
 
 If you find TripletLoc helpful, please consider citing:
 ```bibtex
-@ARTICLE{ma2024triplet,
-  author={Ma, Weixin},
+@ARTICLE{ma2024tripletloc,
+  author={Ma, Weixin and Yin, Huan and Wong, Patricia J. Y. and Wang, Danwei and Sun, Yuxiang and Su, Zhongqing},
   journal={IEEE Robotics and Automation Letters}, 
-  title={TripletLoc: One-Shot Global Localization using Semantic Triplet in Urban Environment}, 
+  title={TripletLoc: One-Shot Global Localization Using Semantic Triplet in Urban Environments}, 
   year={2025},
-  volume={},
-  number={},
-  pages={}}
+  volume={10},
+  number={2},
+  pages={1569-1576}
 ```
 
  
